@@ -118,6 +118,10 @@
 		F7C9FC9C1B9C1131005EF60C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F7C9FCA41B9C16DB005EF60C /* Find(发现) */,
+				F7C9FCA91B9C16DB005EF60C /* Home(首页) */,
+				F7C9FCAE1B9C16DB005EF60C /* me(我) */,
+				F7C9FCB31B9C16DB005EF60C /* Message(消息) */,
 				F7C9FCA01B9C113B005EF60C /* Other */,
 				F7C9FC9D1B9C1131005EF60C /* Model */,
 				F7C9FC9E1B9C1131005EF60C /* View */,
@@ -154,6 +158,162 @@
 			children = (
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		F7C9FCA41B9C16DB005EF60C /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCA51B9C16DB005EF60C /* Controller */,
+				F7C9FCA61B9C16DB005EF60C /* Model */,
+				F7C9FCA71B9C16DB005EF60C /* Other */,
+				F7C9FCA81B9C16DB005EF60C /* VIew */,
+			);
+			path = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		F7C9FCA51B9C16DB005EF60C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7C9FCA61B9C16DB005EF60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7C9FCA71B9C16DB005EF60C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F7C9FCA81B9C16DB005EF60C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		F7C9FCA91B9C16DB005EF60C /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCAA1B9C16DB005EF60C /* Controller */,
+				F7C9FCAB1B9C16DB005EF60C /* Model */,
+				F7C9FCAC1B9C16DB005EF60C /* Other */,
+				F7C9FCAD1B9C16DB005EF60C /* VIew */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		F7C9FCAA1B9C16DB005EF60C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7C9FCAB1B9C16DB005EF60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7C9FCAC1B9C16DB005EF60C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F7C9FCAD1B9C16DB005EF60C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		F7C9FCAE1B9C16DB005EF60C /* me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCAF1B9C16DB005EF60C /* Controller */,
+				F7C9FCB01B9C16DB005EF60C /* Model */,
+				F7C9FCB11B9C16DB005EF60C /* Other */,
+				F7C9FCB21B9C16DB005EF60C /* VIew */,
+			);
+			path = "me(我)";
+			sourceTree = "<group>";
+		};
+		F7C9FCAF1B9C16DB005EF60C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7C9FCB01B9C16DB005EF60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7C9FCB11B9C16DB005EF60C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F7C9FCB21B9C16DB005EF60C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		F7C9FCB31B9C16DB005EF60C /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCB41B9C16DB005EF60C /* Controller */,
+				F7C9FCB51B9C16DB005EF60C /* Model */,
+				F7C9FCB61B9C16DB005EF60C /* Other */,
+				F7C9FCB71B9C16DB005EF60C /* VIew */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		F7C9FCB41B9C16DB005EF60C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7C9FCB51B9C16DB005EF60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7C9FCB61B9C16DB005EF60C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F7C9FCB71B9C16DB005EF60C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
