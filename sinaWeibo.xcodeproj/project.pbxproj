@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		F7C9FC791B9C08B5005EF60C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC781B9C08B5005EF60C /* main.m */; };
 		F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */; };
-		F7C9FC7F1B9C08B5005EF60C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC7E1B9C08B5005EF60C /* ViewController.m */; };
-		F7C9FC821B9C08B5005EF60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC801B9C08B5005EF60C /* Main.storyboard */; };
 		F7C9FC841B9C08B5005EF60C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC831B9C08B5005EF60C /* Images.xcassets */; };
 		F7C9FC871B9C08B5005EF60C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC851B9C08B5005EF60C /* LaunchScreen.xib */; };
 		F7C9FC931B9C08B5005EF60C /* sinaWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */; };
+		F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,13 @@
 		F7C9FC781B9C08B5005EF60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7C9FC7A1B9C08B5005EF60C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F7C9FC7D1B9C08B5005EF60C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F7C9FC7E1B9C08B5005EF60C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F7C9FC811B9C08B5005EF60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7C9FC831B9C08B5005EF60C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7C9FC861B9C08B5005EF60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F7C9FC8C1B9C08B5005EF60C /* sinaWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9FC911B9C08B5005EF60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinaWeiboTests.m; sourceTree = "<group>"; };
+		F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
+		F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +79,9 @@
 		F7C9FC751B9C08B5005EF60C /* sinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
+				F7C9FC9C1B9C1131005EF60C /* classes */,
 				F7C9FC7A1B9C08B5005EF60C /* AppDelegate.h */,
 				F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */,
-				F7C9FC7D1B9C08B5005EF60C /* ViewController.h */,
-				F7C9FC7E1B9C08B5005EF60C /* ViewController.m */,
-				F7C9FC801B9C08B5005EF60C /* Main.storyboard */,
 				F7C9FC831B9C08B5005EF60C /* Images.xcassets */,
 				F7C9FC851B9C08B5005EF60C /* LaunchScreen.xib */,
 				F7C9FC761B9C08B5005EF60C /* Supporting Files */,
@@ -117,6 +113,47 @@
 				F7C9FC911B9C08B5005EF60C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7C9FC9C1B9C1131005EF60C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCA01B9C113B005EF60C /* Other */,
+				F7C9FC9D1B9C1131005EF60C /* Model */,
+				F7C9FC9E1B9C1131005EF60C /* View */,
+				F7C9FC9F1B9C1131005EF60C /* ViewController */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		F7C9FC9D1B9C1131005EF60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7C9FC9E1B9C1131005EF60C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7C9FC9F1B9C1131005EF60C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */,
+				F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F7C9FCA01B9C113B005EF60C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C9FC821B9C08B5005EF60C /* Main.storyboard in Resources */,
 				F7C9FC871B9C08B5005EF60C /* LaunchScreen.xib in Resources */,
 				F7C9FC841B9C08B5005EF60C /* Images.xcassets in Resources */,
 			);
@@ -219,9 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7C9FC7F1B9C08B5005EF60C /* ViewController.m in Sources */,
 				F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */,
 				F7C9FC791B9C08B5005EF60C /* main.m in Sources */,
+				F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +280,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F7C9FC801B9C08B5005EF60C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7C9FC811B9C08B5005EF60C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7C9FC851B9C08B5005EF60C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = sinaWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +387,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = sinaWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

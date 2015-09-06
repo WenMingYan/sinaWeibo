@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MYTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    application.statusBarHidden = NO;
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    // 设置窗口的跟控制器
+    MYTabBarViewController *tabbarVc = [[MYTabBarViewController alloc] init];
+    self.window.rootViewController = tabbarVc;
+    // 显示窗口
+    [self.window makeKeyAndVisible];
+    
+        return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
