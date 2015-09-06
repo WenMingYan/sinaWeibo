@@ -7,6 +7,10 @@
 //
 
 #import "MYTabBarViewController.h"
+#import "MYHomeTableViewController.h"
+#import "MYMessageTableViewController.h"
+#import "MYMeTableViewController.h"
+#import "MYFindTableViewController.h"
 
 @interface MYTabBarViewController ()
 
@@ -18,16 +22,16 @@
     [super viewDidLoad];
     // 添加子控制器
     //--首页
-    UIViewController *home = [[UIViewController alloc] init];
+    MYHomeTableViewController *home = [[MYHomeTableViewController alloc] init];
     [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home" selectImageName:@"tabbar_home_selected"];
     //--消息
-    UIViewController *message = [[UIViewController alloc] init];
+    MYMessageTableViewController *message = [[MYMessageTableViewController alloc] init];
     [self addOneChildVc:message title:@"消息" imageName:@"tabbar_message_center" selectImageName:@"tabbar_message_center_selected"];
     //--发现
-    UIViewController *find = [[UIViewController alloc] init];
+    MYFindTableViewController *find = [[MYFindTableViewController alloc] init];
     [self addOneChildVc:find title:@"发现" imageName:@"tabbar_discover" selectImageName:@"tabbar_discover_selected"];
     //--我
-    UIViewController *me = [[UIViewController alloc] init];
+    MYMeTableViewController *me = [[MYMeTableViewController alloc] init];
     [self addOneChildVc:me title:@"我" imageName:@"tabbar_profile" selectImageName:@"tabbar_profile_selected"];
 
 }

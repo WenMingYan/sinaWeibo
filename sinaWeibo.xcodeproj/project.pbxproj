@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71D16EC1B9C36F50039CB1A /* MYHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16EB1B9C36F50039CB1A /* MYHomeTableViewController.m */; };
+		F71D16EF1B9C370C0039CB1A /* MYMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16EE1B9C370C0039CB1A /* MYMeTableViewController.m */; };
+		F71D16F21B9C37190039CB1A /* MYMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16F11B9C37190039CB1A /* MYMessageTableViewController.m */; };
+		F71D16F51B9C37540039CB1A /* MYFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16F41B9C37540039CB1A /* MYFindTableViewController.m */; };
 		F7C9FC791B9C08B5005EF60C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC781B9C08B5005EF60C /* main.m */; };
 		F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */; };
 		F7C9FC841B9C08B5005EF60C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC831B9C08B5005EF60C /* Images.xcassets */; };
@@ -27,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F71D16EA1B9C36F50039CB1A /* MYHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYHomeTableViewController.h; path = ../MYHomeTableViewController.h; sourceTree = "<group>"; };
+		F71D16EB1B9C36F50039CB1A /* MYHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYHomeTableViewController.m; path = ../MYHomeTableViewController.m; sourceTree = "<group>"; };
+		F71D16ED1B9C370C0039CB1A /* MYMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMeTableViewController.h; sourceTree = "<group>"; };
+		F71D16EE1B9C370C0039CB1A /* MYMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMeTableViewController.m; sourceTree = "<group>"; };
+		F71D16F01B9C37190039CB1A /* MYMessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYMessageTableViewController.h; sourceTree = "<group>"; };
+		F71D16F11B9C37190039CB1A /* MYMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMessageTableViewController.m; sourceTree = "<group>"; };
+		F71D16F31B9C37540039CB1A /* MYFindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFindTableViewController.h; sourceTree = "<group>"; };
+		F71D16F41B9C37540039CB1A /* MYFindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFindTableViewController.m; sourceTree = "<group>"; };
 		F7C9FC731B9C08B5005EF60C /* sinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9FC771B9C08B5005EF60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C9FC781B9C08B5005EF60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +193,8 @@
 		F7C9FCA51B9C16DB005EF60C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F71D16F31B9C37540039CB1A /* MYFindTableViewController.h */,
+				F71D16F41B9C37540039CB1A /* MYFindTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +234,8 @@
 		F7C9FCAA1B9C16DB005EF60C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F71D16EA1B9C36F50039CB1A /* MYHomeTableViewController.h */,
+				F71D16EB1B9C36F50039CB1A /* MYHomeTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +275,8 @@
 		F7C9FCAF1B9C16DB005EF60C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F71D16ED1B9C370C0039CB1A /* MYMeTableViewController.h */,
+				F71D16EE1B9C370C0039CB1A /* MYMeTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +316,8 @@
 		F7C9FCB41B9C16DB005EF60C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F71D16F01B9C37190039CB1A /* MYMessageTableViewController.h */,
+				F71D16F11B9C37190039CB1A /* MYMessageTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -422,10 +442,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F71D16EC1B9C36F50039CB1A /* MYHomeTableViewController.m in Sources */,
 				F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */,
 				F7C9FCC11B9C226A005EF60C /* UIImage+Extern.m in Sources */,
+				F71D16F21B9C37190039CB1A /* MYMessageTableViewController.m in Sources */,
+				F71D16F51B9C37540039CB1A /* MYFindTableViewController.m in Sources */,
 				F7C9FC791B9C08B5005EF60C /* main.m in Sources */,
 				F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */,
+				F71D16EF1B9C370C0039CB1A /* MYMeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +642,7 @@
 				F7C9FC981B9C08B5005EF60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7C9FC991B9C08B5005EF60C /* Build configuration list for PBXNativeTarget "sinaWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +651,7 @@
 				F7C9FC9B1B9C08B5005EF60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
