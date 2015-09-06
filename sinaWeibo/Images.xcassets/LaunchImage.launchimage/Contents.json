@@ -5,6 +5,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "8.0",
+      "filename" : "Default-568h@2x.png",
       "subtype" : "736h",
       "scale" : "3x"
     },
@@ -13,6 +14,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "8.0",
+      "filename" : "Default-568h@2x.png",
       "subtype" : "736h",
       "scale" : "3x"
     },
@@ -21,6 +23,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "8.0",
+      "filename" : "Default-568h@2x.png",
       "subtype" : "667h",
       "scale" : "2x"
     },
@@ -37,6 +40,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h@2x.png",
       "subtype" : "retina4",
       "scale" : "2x"
     },
@@ -45,6 +49,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h@2x.png",
       "scale" : "1x"
     },
     {
@@ -59,6 +64,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h@2x.png",
       "scale" : "2x"
     },
     {
@@ -66,19 +72,21 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
+      "filename" : "Default-568h@2x.png",
       "scale" : "2x"
-    },
-    {
-      "orientation" : "portrait",
-      "idiom" : "iphone",
-      "extent" : "full-screen",
-      "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "iphone",
       "extent" : "full-screen",
       "filename" : "Default@2x.png",
+      "scale" : "1x"
+    },
+    {
+      "orientation" : "portrait",
+      "idiom" : "iphone",
+      "extent" : "full-screen",
+      "filename" : "Default-568h@2x.png",
       "scale" : "2x"
     },
     {
@@ -86,6 +94,7 @@
       "idiom" : "iphone",
       "extent" : "full-screen",
       "subtype" : "retina4",
+      "filename" : "Default-568h@2x.png",
       "scale" : "2x"
     },
     {

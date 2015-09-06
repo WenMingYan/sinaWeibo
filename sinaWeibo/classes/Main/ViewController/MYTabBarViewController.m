@@ -14,6 +14,8 @@
 
 @interface MYTabBarViewController ()
 
+@property (nonatomic,weak) UINavigationController *navigation;
+
 @end
 
 @implementation MYTabBarViewController
@@ -42,7 +44,9 @@
 }
 
 - (void)addOneChildVc:(UIViewController *)controller title:(NSString *)title imageName:(NSString*)imageName selectImageName:(NSString *)selectImage {
-    [self addChildViewController:controller];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    [nav addChildViewController:controller];
+    [self addChildViewController:nav];
     controller.view.backgroundColor = ColorRandom;
     controller.title = title;
     UIImage *homeSelectImage = [UIImage imageWithName:selectImage];

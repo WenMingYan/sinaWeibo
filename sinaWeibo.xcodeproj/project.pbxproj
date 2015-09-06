@@ -11,12 +11,12 @@
 		F71D16EF1B9C370C0039CB1A /* MYMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16EE1B9C370C0039CB1A /* MYMeTableViewController.m */; };
 		F71D16F21B9C37190039CB1A /* MYMessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16F11B9C37190039CB1A /* MYMessageTableViewController.m */; };
 		F71D16F51B9C37540039CB1A /* MYFindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16F41B9C37540039CB1A /* MYFindTableViewController.m */; };
+		F71D16FB1B9C3A140039CB1A /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71D16FA1B9C3A140039CB1A /* MYTabBarViewController.m */; };
 		F7C9FC791B9C08B5005EF60C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC781B9C08B5005EF60C /* main.m */; };
 		F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */; };
 		F7C9FC841B9C08B5005EF60C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC831B9C08B5005EF60C /* Images.xcassets */; };
 		F7C9FC871B9C08B5005EF60C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC851B9C08B5005EF60C /* LaunchScreen.xib */; };
 		F7C9FC931B9C08B5005EF60C /* sinaWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */; };
-		F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */; };
 		F7C9FCC11B9C226A005EF60C /* UIImage+Extern.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FCC01B9C226A005EF60C /* UIImage+Extern.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +39,8 @@
 		F71D16F11B9C37190039CB1A /* MYMessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYMessageTableViewController.m; sourceTree = "<group>"; };
 		F71D16F31B9C37540039CB1A /* MYFindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYFindTableViewController.h; sourceTree = "<group>"; };
 		F71D16F41B9C37540039CB1A /* MYFindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYFindTableViewController.m; sourceTree = "<group>"; };
+		F71D16F91B9C3A140039CB1A /* MYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
+		F71D16FA1B9C3A140039CB1A /* MYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
 		F7C9FC731B9C08B5005EF60C /* sinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9FC771B9C08B5005EF60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C9FC781B9C08B5005EF60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		F7C9FC8C1B9C08B5005EF60C /* sinaWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sinaWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9FC911B9C08B5005EF60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinaWeiboTests.m; sourceTree = "<group>"; };
-		F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
-		F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
 		F7C9FCB81B9C182A005EF60C /* sinaWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sinaWeibo.pch; sourceTree = "<group>"; };
 		F7C9FCBF1B9C226A005EF60C /* UIImage+Extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extern.h"; sourceTree = "<group>"; };
 		F7C9FCC01B9C226A005EF60C /* UIImage+Extern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extern.m"; sourceTree = "<group>"; };
@@ -74,6 +74,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71D16F61B9C3A140039CB1A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F71D16FC1B9C3A2E0039CB1A /* Model */,
+				F71D16F71B9C3A140039CB1A /* View */,
+				F71D16F81B9C3A140039CB1A /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F71D16F71B9C3A140039CB1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F71D16F81B9C3A140039CB1A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F71D16F91B9C3A140039CB1A /* MYTabBarViewController.h */,
+				F71D16FA1B9C3A140039CB1A /* MYTabBarViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F71D16FC1B9C3A2E0039CB1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = ViewController/Model;
+			sourceTree = "<group>";
+		};
 		F7C9FC6A1B9C08B5005EF60C = {
 			isa = PBXGroup;
 			children = (
@@ -135,39 +169,14 @@
 		F7C9FC9C1B9C1131005EF60C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F71D16F61B9C3A140039CB1A /* Main */,
 				F7C9FCA41B9C16DB005EF60C /* Find(发现) */,
 				F7C9FCA91B9C16DB005EF60C /* Home(首页) */,
 				F7C9FCAE1B9C16DB005EF60C /* me(我) */,
 				F7C9FCB31B9C16DB005EF60C /* Message(消息) */,
 				F7C9FCA01B9C113B005EF60C /* Other */,
-				F7C9FC9D1B9C1131005EF60C /* Model */,
-				F7C9FC9E1B9C1131005EF60C /* View */,
-				F7C9FC9F1B9C1131005EF60C /* ViewController */,
 			);
 			path = classes;
-			sourceTree = "<group>";
-		};
-		F7C9FC9D1B9C1131005EF60C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F7C9FC9E1B9C1131005EF60C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F7C9FC9F1B9C1131005EF60C /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */,
-				F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		F7C9FCA01B9C113B005EF60C /* Other */ = {
@@ -444,11 +453,11 @@
 			files = (
 				F71D16EC1B9C36F50039CB1A /* MYHomeTableViewController.m in Sources */,
 				F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */,
+				F71D16FB1B9C3A140039CB1A /* MYTabBarViewController.m in Sources */,
 				F7C9FCC11B9C226A005EF60C /* UIImage+Extern.m in Sources */,
 				F71D16F21B9C37190039CB1A /* MYMessageTableViewController.m in Sources */,
 				F71D16F51B9C37540039CB1A /* MYFindTableViewController.m in Sources */,
 				F7C9FC791B9C08B5005EF60C /* main.m in Sources */,
-				F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */,
 				F71D16EF1B9C370C0039CB1A /* MYMeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
