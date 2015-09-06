@@ -38,6 +38,7 @@
 		F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sinaWeiboTests.m; sourceTree = "<group>"; };
 		F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
 		F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
+		F7C9FCB81B9C182A005EF60C /* sinaWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sinaWeibo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 			children = (
 				F7C9FC771B9C08B5005EF60C /* Info.plist */,
 				F7C9FC781B9C08B5005EF60C /* main.m */,
+				F7C9FCB81B9C182A005EF60C /* sinaWeibo.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -536,6 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sinaWeibo/sinaWeibo.pch";
 				INFOPLIST_FILE = sinaWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -548,6 +551,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/sinaWeibo/sinaWeibo.pch";
 				INFOPLIST_FILE = sinaWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

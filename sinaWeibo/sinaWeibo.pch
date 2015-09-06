@@ -1,0 +1,14 @@
+//
+//  sinaWeibo.pch
+//  sinaWeibo
+//
+//  Created by 温明妍 on 15/9/6.
+//  Copyright (c) 2015年 wmy. All rights reserved.
+//
+
+#ifndef sinaWeibo_sinaWeibo_pch
+#define sinaWeibo_sinaWeibo_pch
+
+#define ColorRandom [UIColor colorWithRed:arc4random_uniform(256)/255.f green:arc4random_uniform(256)/255.f blue:arc4random_uniform(256)/255.f alpha:1]
+
+#endif

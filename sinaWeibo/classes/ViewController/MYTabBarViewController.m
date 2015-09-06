@@ -19,42 +19,16 @@
     // 添加子控制器
     //--首页
     UIViewController *home = [[UIViewController alloc] init];
-    home.view.backgroundColor = [UIColor redColor];
-    [self addChildViewController:home];
-    home.title = @"首页";
-    UIImage *homeSelectImage = [UIImage imageNamed:@"tabbar_home_selected"];
-    // 用原图，不要渲染
-    homeSelectImage = [homeSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    home.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
-    home.tabBarItem.selectedImage = homeSelectImage;
+    [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home" selectImageName:@"tabbar_home_selected"];
     //--消息
     UIViewController *message = [[UIViewController alloc] init];
-    message.view.backgroundColor = [UIColor blackColor];
-    [self addChildViewController:message];
-    message.title = @"消息";
-    UIImage *messageSelectImage = [UIImage imageNamed:@"tabbar_message_center_selected"];
-    messageSelectImage = [messageSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    message.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
-    message.tabBarItem.selectedImage = messageSelectImage;
+    [self addOneChildVc:message title:@"消息" imageName:@"tabbar_message_center" selectImageName:@"tabbar_message_center_selected"];
     //--发现
     UIViewController *find = [[UIViewController alloc] init];
-    find.view.backgroundColor = [UIColor blueColor];
-    [self addChildViewController:find];
-    find.title = @"发现";
-    UIImage *findSelectImage = [UIImage imageNamed:@"tabbar_discover_selected"];
-    findSelectImage = [findSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    find.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
-    find.tabBarItem.selectedImage = findSelectImage;
+    [self addOneChildVc:find title:@"发现" imageName:@"tabbar_discover" selectImageName:@"tabbar_discover_selected"];
     //--我
     UIViewController *me = [[UIViewController alloc] init];
-    me.view.backgroundColor = [UIColor purpleColor];
-    [self addChildViewController:me];
-    me.title = @"我";
-    UIImage *meSelectedImage = [UIImage imageNamed:@"tabbar_profile_selected"];
-    messageSelectImage = [meSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    me.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
-    me.tabBarItem.selectedImage = messageSelectImage;
-    
+    [self addOneChildVc:me title:@"我" imageName:@"tabbar_profile" selectImageName:@"tabbar_profile_selected"];
 
 }
 
@@ -63,6 +37,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)addOneChildVc:(UIViewController *)controller title:(NSString *)title imageName:(NSString*)imageName selectImageName:(NSString *)selectaImage {
+    [self addChildViewController:controller];
+    controller.view.backgroundColor = ColorRandom;
+    controller.title = title;
+    UIImage *homeSelectImage = [UIImage imageNamed:selectaImage];
+    // 用原图，不要渲染
+    homeSelectImage = [homeSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    controller.tabBarItem.image = [UIImage imageNamed:selectaImage];
+    controller.tabBarItem.selectedImage = homeSelectImage;
 
+}
 
 @end
