@@ -13,6 +13,7 @@
 		F7C9FC871B9C08B5005EF60C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC851B9C08B5005EF60C /* LaunchScreen.xib */; };
 		F7C9FC931B9C08B5005EF60C /* sinaWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC921B9C08B5005EF60C /* sinaWeiboTests.m */; };
 		F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */; };
+		F7C9FCC11B9C226A005EF60C /* UIImage+Extern.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FCC01B9C226A005EF60C /* UIImage+Extern.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		F7C9FCA11B9C1172005EF60C /* MYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBarViewController.h; sourceTree = "<group>"; };
 		F7C9FCA21B9C1172005EF60C /* MYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBarViewController.m; sourceTree = "<group>"; };
 		F7C9FCB81B9C182A005EF60C /* sinaWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sinaWeibo.pch; sourceTree = "<group>"; };
+		F7C9FCBF1B9C226A005EF60C /* UIImage+Extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extern.h"; sourceTree = "<group>"; };
+		F7C9FCC01B9C226A005EF60C /* UIImage+Extern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extern.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 		F7C9FCA01B9C113B005EF60C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F7C9FCBF1B9C226A005EF60C /* UIImage+Extern.h */,
+				F7C9FCC01B9C226A005EF60C /* UIImage+Extern.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */,
+				F7C9FCC11B9C226A005EF60C /* UIImage+Extern.m in Sources */,
 				F7C9FC791B9C08B5005EF60C /* main.m in Sources */,
 				F7C9FCA31B9C1172005EF60C /* MYTabBarViewController.m in Sources */,
 			);

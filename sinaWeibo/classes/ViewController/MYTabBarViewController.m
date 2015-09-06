@@ -41,27 +41,16 @@
     [self addChildViewController:controller];
     controller.view.backgroundColor = ColorRandom;
     controller.title = title;
-    UIImage *homeSelectImage = [self imageWithName:selectImage];
+    UIImage *homeSelectImage = [UIImage imageWithName:selectImage];
     // 用原图，不要渲染（此方法不能在iOS6中）
     if (isAfteriOS7) {
         homeSelectImage = [homeSelectImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
-    controller.tabBarItem.image = [self imageWithName:imageName];
+    controller.tabBarItem.image = [UIImage imageWithName:imageName];
     controller.tabBarItem.selectedImage = homeSelectImage;
 
 }
 
-- (UIImage *)imageWithName:(NSString *)name {
-    NSString *newName = nil;
-    UIImage *image = nil;
-    if (isAfteriOS7) {
-        newName = [name stringByAppendingString:@"_os7"];
-        image = [UIImage imageNamed:newName];
-    }
-    if (image == nil) {
-        image = [UIImage imageNamed:name];
-    }
-    return image;
-}
+
 
 @end
