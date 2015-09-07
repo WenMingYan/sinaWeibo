@@ -13,16 +13,13 @@
 
 #pragma mark - --------------------退出清空------------------
 #pragma mark - --------------------初始化--------------------
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    DLog(@"--MYMessageTableViewController--viewDidLoad--");
      self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(onClickWrite)];
-    // 通过appearance对象可以修改整个项目中所有的UIBarButtonItem样式
-    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
-    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    dict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    dict[UITextAttributeTextColor] = [UIColor orangeColor];
-    [appearance setTitleTextAttributes:dict forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 #pragma mark - --------------------属性相关------------------
 

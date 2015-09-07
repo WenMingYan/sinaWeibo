@@ -48,7 +48,6 @@
     MYTabNavigationController *nav = [[MYTabNavigationController alloc] initWithRootViewController:controller];
     [nav addChildViewController:controller];
     [self addChildViewController:nav];
-//    controller.view.backgroundColor = ColorRandom;
     controller.title = title;
     UIImage *homeSelectImage = [UIImage imageWithName:selectImage];
     // 用原图，不要渲染（此方法不能在iOS6中）

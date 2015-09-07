@@ -11,6 +11,30 @@
 @implementation MYTabNavigationController
 
 /**
+ *  这个方法在第一次使用时才会调用
+ */
++ (void)initialize {
+    if (self == [MYTabNavigationController class]) {
+        // 通过appearance对象可以修改整个项目中所有的UIBarButtonItem样式
+        UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+        NSMutableDictionary *norDict = [NSMutableDictionary dictionary];
+        norDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+        norDict[UITextAttributeTextColor] = [UIColor orangeColor];
+        [appearance setTitleTextAttributes:norDict forState:UIControlStateNormal];
+        
+        NSMutableDictionary *highlightDict = [NSMutableDictionary dictionary];
+        highlightDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+        highlightDict[UITextAttributeTextColor] = [UIColor redColor];
+        [appearance setTitleTextAttributes:highlightDict forState:UIControlStateHighlighted];
+        
+        NSMutableDictionary *disableDict = [NSMutableDictionary dictionary];
+        disableDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+        disableDict[UITextAttributeTextColor] = [UIColor grayColor];
+        [appearance setTitleTextAttributes:disableDict forState:UIControlStateDisabled];
+    }
+}
+
+/**
  *  拦截所有Push进来的子控制器
  *
  *  @param viewController viewController

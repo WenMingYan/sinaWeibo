@@ -18,7 +18,6 @@
 #pragma mark - --------------------初始化--------------------
 - (void)viewDidLoad {
     // 设置导航栏左右边按钮
-    
     UIButton *leftButton = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch"
                                            highlightImageName:@"navigationbar_friendsearch_highlighted"
                                                        target:self
