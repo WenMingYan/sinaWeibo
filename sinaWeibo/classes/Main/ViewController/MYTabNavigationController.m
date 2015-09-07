@@ -68,7 +68,7 @@
     [super pushViewController:viewController animated:animated];
     // 非栈底
     
-    if (self.viewControllers.count > 0) {// 如果push的不是栈底控制器
+    if (self.viewControllers.count > 1) {// 如果push的不是栈底控制器
         [self hidesBottomBarWhenPushed];
         UIButton *leftButton = [UIBarButtonItem itemWithImageName:@"navigationbar_back"
                                                highlightImageName:@"navigationbar_back_highlighted"

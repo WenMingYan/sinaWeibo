@@ -10,4 +10,14 @@
 
 @implementation MYFindTableViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    searchBar.frame = CGRectMake(0, 0, kScreenWidth, 30);
+    [searchBar setBackgroundImage:[UIImage resizeImage:@"searchbar_textfield_background"]];
+    
+    self.navigationItem.titleView = searchBar;
+    
+}
+
 @end

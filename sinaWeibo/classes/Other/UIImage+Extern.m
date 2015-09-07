@@ -23,4 +23,12 @@
     return image;
 }
 
++ (UIImage *)resizeImage:(NSString *)name {
+    UIImage *image = [UIImage imageWithName:name];
+    CGFloat imageH = image.size.height * 0.5;
+    CGFloat imageW = image.size.width * 0.5;
+    return [image stretchableImageWithLeftCapWidth:imageW topCapHeight:imageH];
+}
+
+
 @end
