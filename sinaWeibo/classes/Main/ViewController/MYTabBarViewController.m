@@ -11,6 +11,7 @@
 #import "MYMessageTableViewController.h"
 #import "MYMeTableViewController.h"
 #import "MYFindTableViewController.h"
+#import "MYTabNavigationController.h"
 
 @interface MYTabBarViewController ()
 
@@ -44,10 +45,10 @@
 }
 
 - (void)addOneChildVc:(UIViewController *)controller title:(NSString *)title imageName:(NSString*)imageName selectImageName:(NSString *)selectImage {
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    MYTabNavigationController *nav = [[MYTabNavigationController alloc] initWithRootViewController:controller];
     [nav addChildViewController:controller];
     [self addChildViewController:nav];
-    controller.view.backgroundColor = ColorRandom;
+//    controller.view.backgroundColor = ColorRandom;
     controller.title = title;
     UIImage *homeSelectImage = [UIImage imageWithName:selectImage];
     // 用原图，不要渲染（此方法不能在iOS6中）

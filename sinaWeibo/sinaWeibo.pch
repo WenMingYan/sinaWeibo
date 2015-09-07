@@ -9,9 +9,22 @@
 #ifndef sinaWeibo_sinaWeibo_pch
 #define sinaWeibo_sinaWeibo_pch
 
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "UIImage+Extern.h"
+#import "UIView+Extern.h"
+#import "UIBarButtonItem+Extension.h"
+
 #define ColorRandom [UIColor colorWithRed:arc4random_uniform(256)/255.f green:arc4random_uniform(256)/255.f blue:arc4random_uniform(256)/255.f alpha:1]
 #define isAfteriOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#if defined (DEBUG) || defined(MONKEY)
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+#endif
+
 #endif
