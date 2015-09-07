@@ -22,7 +22,9 @@
 
 + (void)setupNavigationBarTheme {
     UINavigationBar *appearance = [UINavigationBar appearance];
-    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
+    if (!isAfteriOS7) {
+        [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
+    }
     // 设置文字属性(适配iOS6)
     NSMutableDictionary *titleDict = [NSMutableDictionary dictionary];
     titleDict[UITextAttributeTextColor] = [UIColor blackColor];
@@ -43,13 +45,12 @@
     // 设置背景 (为了让按钮的背景消失，然后设置完全透明的图片)
     [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
-    NSMutableDictionary *highlightDict = [NSMutableDictionary dictionary];
-    highlightDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    NSMutableDictionary *highlightDict = [NSMutableDictionary dictionaryWithDictionary:norDict];
     highlightDict[UITextAttributeTextColor] = [UIColor redColor];
     [appearance setTitleTextAttributes:highlightDict forState:UIControlStateHighlighted];
     [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
-    NSMutableDictionary *disableDict = [NSMutableDictionary dictionary];
-    disableDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    
+    NSMutableDictionary *disableDict = [NSMutableDictionary dictionaryWithDictionary:norDict];
     disableDict[UITextAttributeTextColor] = [UIColor grayColor];
     [appearance setTitleTextAttributes:disableDict forState:UIControlStateDisabled];
     [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
