@@ -15,23 +15,45 @@
  */
 + (void)initialize {
     if (self == [MYTabNavigationController class]) {
-        // 通过appearance对象可以修改整个项目中所有的UIBarButtonItem样式
-        UIBarButtonItem *appearance = [UIBarButtonItem appearance];
-        NSMutableDictionary *norDict = [NSMutableDictionary dictionary];
-        norDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-        norDict[UITextAttributeTextColor] = [UIColor orangeColor];
-        [appearance setTitleTextAttributes:norDict forState:UIControlStateNormal];
-        
-        NSMutableDictionary *highlightDict = [NSMutableDictionary dictionary];
-        highlightDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-        highlightDict[UITextAttributeTextColor] = [UIColor redColor];
-        [appearance setTitleTextAttributes:highlightDict forState:UIControlStateHighlighted];
-        
-        NSMutableDictionary *disableDict = [NSMutableDictionary dictionary];
-        disableDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-        disableDict[UITextAttributeTextColor] = [UIColor grayColor];
-        [appearance setTitleTextAttributes:disableDict forState:UIControlStateDisabled];
+        [self setupBarButtonItemTheme];
+        [self setupNavigationBarTheme];
     }
+}
+
++ (void)setupNavigationBarTheme {
+    UINavigationBar *appearance = [UINavigationBar appearance];
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background"] forBarMetrics:UIBarMetricsDefault];
+    // 设置文字属性(适配iOS6)
+    NSMutableDictionary *titleDict = [NSMutableDictionary dictionary];
+    titleDict[UITextAttributeTextColor] = [UIColor blackColor];
+    titleDict[UITextAttributeFont] = [UIFont boldSystemFontOfSize:17];
+    titleDict[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
+    [appearance setTitleTextAttributes:titleDict];
+}
+
+/**
+ *  设置 BarButtonItem 主题
+ */
++ (void)setupBarButtonItemTheme {
+    UIBarButtonItem *appearance = [UIBarButtonItem appearance];
+    NSMutableDictionary *norDict = [NSMutableDictionary dictionary];
+    norDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    norDict[UITextAttributeTextColor] = [UIColor orangeColor];
+    [appearance setTitleTextAttributes:norDict forState:UIControlStateNormal];
+    // 设置背景 (为了让按钮的背景消失，然后设置完全透明的图片)
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    NSMutableDictionary *highlightDict = [NSMutableDictionary dictionary];
+    highlightDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    highlightDict[UITextAttributeTextColor] = [UIColor redColor];
+    [appearance setTitleTextAttributes:highlightDict forState:UIControlStateHighlighted];
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    NSMutableDictionary *disableDict = [NSMutableDictionary dictionary];
+    disableDict[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    disableDict[UITextAttributeTextColor] = [UIColor grayColor];
+    [appearance setTitleTextAttributes:disableDict forState:UIControlStateDisabled];
+    [appearance setBackgroundImage:[UIImage imageWithName:@"navigationbar_button_background"] forState:UIControlStateDisabled barMetrics:UIBarMetricsDefault];
+
 }
 
 /**

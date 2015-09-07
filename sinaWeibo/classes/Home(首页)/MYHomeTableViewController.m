@@ -45,8 +45,6 @@
 
 - (void)onClickFriendSearch:(UIButton *)button {
     DLog(@"onClickFriendSearch");
-    OneViewController *vc = [[OneViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)onCLickPop:(UIButton *)button {
