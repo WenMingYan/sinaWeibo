@@ -24,6 +24,8 @@
 		F71D17131B9D1E170039CB1A /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F71D17121B9D1E170039CB1A /* TwoViewController.xib */; };
 		F78E321D1B9E8DC0005A7C34 /* MYTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F78E321C1B9E8DC0005A7C34 /* MYTitleButton.m */; };
 		F78E32201B9E9A53005A7C34 /* MYPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F78E321F1B9E9A53005A7C34 /* MYPopView.m */; };
+		F78E32231B9EB41F005A7C34 /* MYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F78E32221B9EB41F005A7C34 /* MYTabBar.m */; };
+		F78E322B1B9EC9D2005A7C34 /* MYComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78E322A1B9EC9D2005A7C34 /* MYComposeViewController.m */; };
 		F7C9FC791B9C08B5005EF60C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC781B9C08B5005EF60C /* main.m */; };
 		F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C9FC7B1B9C08B5005EF60C /* AppDelegate.m */; };
 		F7C9FC841B9C08B5005EF60C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C9FC831B9C08B5005EF60C /* Images.xcassets */; };
@@ -74,6 +76,10 @@
 		F78E321C1B9E8DC0005A7C34 /* MYTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTitleButton.m; sourceTree = "<group>"; };
 		F78E321E1B9E9A53005A7C34 /* MYPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPopView.h; sourceTree = "<group>"; };
 		F78E321F1B9E9A53005A7C34 /* MYPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPopView.m; sourceTree = "<group>"; };
+		F78E32211B9EB41F005A7C34 /* MYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTabBar.h; sourceTree = "<group>"; };
+		F78E32221B9EB41F005A7C34 /* MYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTabBar.m; sourceTree = "<group>"; };
+		F78E32291B9EC9D2005A7C34 /* MYComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYComposeViewController.h; sourceTree = "<group>"; };
+		F78E322A1B9EC9D2005A7C34 /* MYComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYComposeViewController.m; sourceTree = "<group>"; };
 		F7C9FC731B9C08B5005EF60C /* sinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9FC771B9C08B5005EF60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7C9FC781B9C08B5005EF60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 				F78E321C1B9E8DC0005A7C34 /* MYTitleButton.m */,
 				F78E321E1B9E9A53005A7C34 /* MYPopView.h */,
 				F78E321F1B9E9A53005A7C34 /* MYPopView.m */,
+				F78E32211B9EB41F005A7C34 /* MYTabBar.h */,
+				F78E32221B9EB41F005A7C34 /* MYTabBar.m */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -178,6 +186,47 @@
 				F71D17121B9D1E170039CB1A /* TwoViewController.xib */,
 			);
 			path = Temp;
+			sourceTree = "<group>";
+		};
+		F78E32241B9EC977005A7C34 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				F78E32251B9EC977005A7C34 /* Controller */,
+				F78E32261B9EC977005A7C34 /* Model */,
+				F78E32271B9EC977005A7C34 /* Other */,
+				F78E32281B9EC977005A7C34 /* VIew */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		F78E32251B9EC977005A7C34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F78E32291B9EC9D2005A7C34 /* MYComposeViewController.h */,
+				F78E322A1B9EC9D2005A7C34 /* MYComposeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F78E32261B9EC977005A7C34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F78E32271B9EC977005A7C34 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F78E32281B9EC977005A7C34 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		F7C9FC6A1B9C08B5005EF60C = {
@@ -241,6 +290,7 @@
 		F7C9FC9C1B9C1131005EF60C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				F78E32241B9EC977005A7C34 /* Compose */,
 				F71D17091B9D1DBC0039CB1A /* Temp */,
 				F71D16F61B9C3A140039CB1A /* Main */,
 				F7C9FCA41B9C16DB005EF60C /* Find(发现) */,
@@ -531,8 +581,10 @@
 				F71D16EC1B9C36F50039CB1A /* MYHomeTableViewController.m in Sources */,
 				F71D17021B9C56F70039CB1A /* MYTableViewController.m in Sources */,
 				F7C9FC7C1B9C08B5005EF60C /* AppDelegate.m in Sources */,
+				F78E32231B9EB41F005A7C34 /* MYTabBar.m in Sources */,
 				F71D16FB1B9C3A140039CB1A /* MYTabBarViewController.m in Sources */,
 				F71D16FF1B9C508C0039CB1A /* MYTabNavigationController.m in Sources */,
+				F78E322B1B9EC9D2005A7C34 /* MYComposeViewController.m in Sources */,
 				F71D170F1B9D1DEF0039CB1A /* TwoViewController.m in Sources */,
 				F78E32201B9E9A53005A7C34 /* MYPopView.m in Sources */,
 				F71D16F21B9C37190039CB1A /* MYMessageTableViewController.m in Sources */,

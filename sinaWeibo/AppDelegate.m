@@ -20,7 +20,7 @@
     application.statusBarHidden = NO;
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    // 设置窗口的跟控制器
+    // 设置窗口的根控制器
     MYTabBarViewController *tabbarVc = [[MYTabBarViewController alloc] init];
     self.window.rootViewController = tabbarVc;
     // 显示窗口
