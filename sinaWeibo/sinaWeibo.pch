@@ -20,6 +20,8 @@
 #define isAfteriOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+// 导航栏标题的字体
+#define navigationTitleFont [UIFont boldSystemFontOfSize:17]
 
 #if defined (DEBUG) || defined(MONKEY)
 #   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);

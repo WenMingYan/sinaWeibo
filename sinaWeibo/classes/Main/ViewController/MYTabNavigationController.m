@@ -28,7 +28,7 @@
     // 设置文字属性(适配iOS6)
     NSMutableDictionary *titleDict = [NSMutableDictionary dictionary];
     titleDict[UITextAttributeTextColor] = [UIColor blackColor];
-    titleDict[UITextAttributeFont] = [UIFont boldSystemFontOfSize:17];
+    titleDict[UITextAttributeFont] = navigationTitleFont;
     titleDict[UITextAttributeTextShadowOffset] = [NSValue valueWithUIOffset:UIOffsetZero];
     [appearance setTitleTextAttributes:titleDict];
 }

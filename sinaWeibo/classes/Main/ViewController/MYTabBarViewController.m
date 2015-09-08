@@ -37,6 +37,9 @@
     MYMeTableViewController *me = [[MYMeTableViewController alloc] init];
     [self addOneChildVc:me title:@"我" imageName:@"tabbar_profile" selectImageName:@"tabbar_profile_selected"];
 
+    // 调整tabBar
+    self.tabBar.backgroundImage = [UIImage imageWithName:@"tabbar_background"];
+    self.tabBar.tintColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning {

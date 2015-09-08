@@ -10,4 +10,6 @@
 
 @interface MYSearchBar : UITextField
 
++ (instancetype)searchBar;
+
 @end

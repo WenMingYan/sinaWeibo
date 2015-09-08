@@ -9,12 +9,26 @@
 #import "MYHomeTableViewController.h"
 #import "MYTableViewController.h"
 #import "OneViewController.h"
+#import "MYTitleButton.h"
+#import "MYPopView.h"
+
+@interface MYHomeTableViewController () <MYPopViewDelegate>
+
+@property (nonatomic,strong) MYPopView *popView;
+@property (nonatomic,strong) MYTitleButton *titleButton;
+
+@end
 
 @implementation MYHomeTableViewController
 
 
 
 #pragma mark - --------------------退出清空------------------
+- (void)dealloc {
+    self.popView = nil;
+    self.titleButton = nil;
+}
+
 #pragma mark - --------------------初始化--------------------
 - (void)viewDidLoad {
     // 设置导航栏左右边按钮
@@ -28,6 +42,21 @@
                                                         action:@selector(onCLickPop:)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    // 设置导航栏中间的按钮
+    self.titleButton = [[MYTitleButton alloc] init];
+    self.titleButton.adjustsImageWhenHighlighted = NO;
+    [self.titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    [self.titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
+
+    self.navigationItem.titleView = self.titleButton;
+    NSString *title = @"首页";
+    [self.titleButton setTitle:title forState:UIControlStateNormal];
+    self.titleButton.width = 100;
+    self.titleButton.height = 30;
+    [self.titleButton addTarget:self action:@selector(onClickTitle:) forControlEvents:UIControlEventTouchUpInside];
+    // 点击首页时显示的popView
+    self.popView = [[MYPopView alloc] init];
+    self.popView.delegate = self;
 }
 
 #pragma mark - --------------------属性相关------------------
@@ -43,6 +72,19 @@
 
 #pragma mark - --------------------按钮事件------------------
 
+/**
+ *  点击title时
+ *
+ *  @param sender button
+ */
+- (void)onClickTitle:(UIButton *)sender {
+    if (self.popView.isShow) {
+        [self.popView dismiss];
+    } else {
+        [self.popView showInView:self.navigationController.view];
+    }
+}
+
 - (void)onClickFriendSearch:(UIButton *)button {
     DLog(@"onClickFriendSearch");
 }
@@ -52,6 +94,27 @@
 }
 
 #pragma mark - --------------------代理方法------------------
+
+#pragma mark - popViewDelegate
+- (NSArray *)popViewWithSetDate{
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    [arr addObject:@"abcd"];
+    [arr addObject:@"abcd"];
+    [arr addObject:@"abcd"];
+    [arr addObject:@"abcd"];
+    return arr;
+}
+
+- (void)popView:(MYPopView *)popView didSelectItemIndex:(int)index {
+    DLog(@"index = %d",index);
+}
+
+- (void)popViewWhenShowOrDismiss:(BOOL)isShow {
+    self.titleButton.selected = isShow;
+}
+
+#pragma mark - tableViewDelegate
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifider = @"UITableViewCell";
