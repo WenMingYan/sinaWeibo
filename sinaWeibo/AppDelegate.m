@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "MYTabBarViewController.h"
+#import "MYNewVersionViewController.h"
+#import "MYOAuthViewController.h"
+#import "MYControllerTool.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +24,11 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     // 设置窗口的根控制器
-    MYTabBarViewController *tabbarVc = [[MYTabBarViewController alloc] init];
-    self.window.rootViewController = tabbarVc;
+    // 从沙盒中取出上次的软件版本号
+    [MYControllerTool chooseController];
     // 显示窗口
     [self.window makeKeyAndVisible];
-    
-        return YES;
+    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

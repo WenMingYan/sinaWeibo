@@ -15,11 +15,19 @@
 #import "UIImage+Extern.h"
 #import "UIView+Extern.h"
 #import "UIBarButtonItem+Extension.h"
-
-#define ColorRandom [UIColor colorWithRed:arc4random_uniform(256)/255.f green:arc4random_uniform(256)/255.f blue:arc4random_uniform(256)/255.f alpha:1]
+#define Color(r,g,b,a) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:(a)]
+#define ColorRandom Color(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256),1)
 #define isAfteriOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define Screen3P5Inch ([[UIScreen mainScreen] currentMode].size.height <1136)
+
+// 应用相关
+#define lastVersions @"lastVersion"
+#define KWeiBoAppKey @"4293554479"
+#define kRedirectURI @"http://www.baidu.com"
+#define kWeiBoSecrect @"4fe4e63c6d756cd25452b404cafde4d2"
+
 // 导航栏标题的字体
 #define navigationTitleFont [UIFont boldSystemFontOfSize:17]
 
